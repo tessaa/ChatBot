@@ -1,5 +1,6 @@
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -7,11 +8,15 @@ import java.util.HashMap;
  */
 public class SubtitleParser {
 
-    private final String subtitleFolder = "../Documents/Subtitles/";
-    private final String movieNames = "../Documents/Subtitles/Subtitles.txt";
+    private final String subtitleFolder = "Subtitles/";
+    private final String movieNames = "Subtitles/Subtitles.txt";
     private BufferedReader movieNamesReader;
     private String line;
     private HashMap<String, Integer> wordMap;
+    private String previousLine;
+    private String unCompleteLine;
+    private final AIMLFileCreator aimlFileCreator;
+    private ArrayList<ArrayList<String>> dialogue;
 
 
     public SubtitleParser(){
@@ -20,33 +25,40 @@ public class SubtitleParser {
         }catch(FileNotFoundException e){
             System.err.println("File not found");
         }
-        wordMap = new HashMap<String, Integer>();
+        this.wordMap = new HashMap<String, Integer>();
+        this.aimlFileCreator = new AIMLFileCreator();
+        this.dialogue = new ArrayList<ArrayList<String>>();
     }
 
     public void readMovieNames()throws IOException{
         while((line = movieNamesReader.readLine()) != null){
-            parseSubtitleFile(line.trim());
+            line = line.trim();
+            unCompleteLine = null;
+            previousLine = null;
+            aimlFileCreator.setAimlFileName(line.replace(".srt", ".aiml"));
+            aimlFileCreator.writeAIMLFile(parseSubtitleFile(line));
         }
     }
 
-    private void parseSubtitleFile(String filename){
+    private ArrayList<String> parseSubtitleFile(String filename){
+        ArrayList<String> list = new ArrayList<String>();
         int i = 1;
         try{
             BufferedReader reader = new BufferedReader(new FileReader(subtitleFolder+filename));
             BufferedWriter writer = new BufferedWriter(new FileWriter(subtitleFolder+2+filename));
             while ((line = reader.readLine()) != null){
+                line = line.trim();
                 if(line.isEmpty()){
                     continue;
                 }
-                if(line.trim().matches("[0-9]+")){
-                   System.out.println("number");
+                if(line.matches("[0-9]+")){
                     continue;
                 }
-                if(line.trim().equals(i+"")||line.trim().equals((i-1)+"")){
+                if(line.equals(i+"")||line.trim().equals((i-1)+"")){
                     i++;
                     continue;
                 }
-                if(line.trim().equals(1+"")){
+                if(line.equals(1+"")){
                     continue;
                 }
                 if(line.startsWith("0")||line.startsWith("(")){
@@ -55,19 +67,32 @@ public class SubtitleParser {
                 if(line.contains("[") || line.contains("]")){
                     continue;
                 }
+                if(!line.endsWith(".") && !line.endsWith("?") && !line.endsWith("!")){
+                    if(unCompleteLine == null){
+                        unCompleteLine = line.replace("\n", " ");
+                    }else{
+                        unCompleteLine = unCompleteLine + line;
+                    }
+                    continue;
+                }
                 else{
+                    if(unCompleteLine != null){
+                        line = unCompleteLine + " " +line;
+                        System.out.println(line);
+                        unCompleteLine = null;
+                    }
                     line = line.replace('-', ' ').replace('"', ' ')
                             .replace("<i>", " ").replace("</i>", " ")
                             .replace("</font>", " ").replace("<font>", " ")
                             .replace("<", " ").replace(">", " ").trim();
-                    //saveLine(line);
-                    writer.write(line + "\n");
-                    writer.write("\n");
+                    list.add(line);
+
                 }
             }
         }catch (IOException e){
             System.err.println("Could not read file: "+ filename);
         }
+        return list;
     }
 
     private void saveLine(String line){
