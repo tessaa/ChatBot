@@ -17,9 +17,11 @@ public class SubtitleParser {
     private String unCompleteLine;
     private final AIMLFileCreator aimlFileCreator;
     private ArrayList<ArrayList<String>> dialogue;
+    private ArrayList<String> aimlFiles = new ArrayList<String>();
 
 
     public SubtitleParser(){
+        //System.out.println("Creating movieNamesReader");
         try{
             movieNamesReader = new BufferedReader(new FileReader(movieNames));
         }catch(FileNotFoundException e){
@@ -30,22 +32,45 @@ public class SubtitleParser {
         this.dialogue = new ArrayList<ArrayList<String>>();
     }
 
-    public void readMovieNames()throws IOException{
-        while((line = movieNamesReader.readLine()) != null){
+    public void startParsing()throws IOException{
+       // System.out.println("startParsing");
+            while((line = movieNamesReader.readLine()) != null){
+            //System.out.println("Writing filename: "+ line);
             line = line.trim();
+                aimlFiles.add(line);
             unCompleteLine = null;
             previousLine = null;
             aimlFileCreator.setAimlFileName(line.replace(".srt", ".aiml"));
-            aimlFileCreator.writeAIMLFile(parseSubtitleFile(line));
-        }
+            //System.out.println("Writing filename: "+ line);
+            aimlFileCreator.createFile(parseSubtitleFile(line));
+                    }
+        createAIMLFileNames();
     }
 
-    private ArrayList<String> parseSubtitleFile(String filename){
-        ArrayList<String> list = new ArrayList<String>();
+    private void createAIMLFileNames(){
+        try{
+            File file = new File("aiml.txt");
+            if(file.canWrite()){
+            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+            //System.out.println("createAIML");
+            for(String s: aimlFiles){
+                s = s.replace(".srt", ".aiml");
+               // System.out.println(s);
+                writer.write(s);
+                writer.newLine();
+                writer.flush();
+            }
+            }
+
+        }catch (IOException e){
+            System.err.println("Could not write to file: ");
+        }
+    }
+    private HashMap<String,String> parseSubtitleFile(String filename){
+        HashMap<String, String> list = new HashMap<String, String>();
         int i = 1;
         try{
             BufferedReader reader = new BufferedReader(new FileReader(subtitleFolder+filename));
-            BufferedWriter writer = new BufferedWriter(new FileWriter(subtitleFolder+2+filename));
             while ((line = reader.readLine()) != null){
                 line = line.trim();
                 if(line.isEmpty()){
@@ -67,7 +92,7 @@ public class SubtitleParser {
                 if(line.contains("[") || line.contains("]")){
                     continue;
                 }
-                if(!line.endsWith(".") && !line.endsWith("?") && !line.endsWith("!")){
+                if(!line.endsWith(".") && !line.endsWith("?") && !line.endsWith("!") && (line.length() <20)){
                     if(unCompleteLine == null){
                         unCompleteLine = line.replace("\n", " ");
                     }else{
@@ -78,14 +103,21 @@ public class SubtitleParser {
                 else{
                     if(unCompleteLine != null){
                         line = unCompleteLine + " " +line;
-                        System.out.println(line);
                         unCompleteLine = null;
                     }
                     line = line.replace('-', ' ').replace('"', ' ')
-                            .replace("<i>", " ").replace("</i>", " ")
-                            .replace("</font>", " ").replace("<font>", " ")
-                            .replace("<", " ").replace(">", " ").trim();
-                    list.add(line);
+                            .replace("<i>", "").replace("</i>", "")
+                            .replace("</font>", "").replace("<font>", "")
+                            .replace("<", "").replace(">", "")
+                            .trim();
+                    if(previousLine != null){
+                        String temp = line;
+                        list.put(previousLine.toUpperCase().replace(".", " ").replace(",", " ")
+                                .replace("!", " ").replace("?", " ").trim(),temp);
+                        previousLine = line;
+                    }else{
+                        previousLine = line;
+                    }
 
                 }
             }
@@ -122,7 +154,7 @@ public class SubtitleParser {
     public static void main(String args[]){
         SubtitleParser parser = new SubtitleParser();
         try{
-            parser.readMovieNames();
+            parser.startParsing();
         }catch (IOException e){
             System.err.println("Could not read file");
         }

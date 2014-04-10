@@ -1,0 +1,2100 @@
+1
+00:00:00,604 --> 00:00:04,671
+- Modest preemptive actions can obviate the need
+
+2
+00:00:04,810 --> 00:00:08,160
+of more drastic actions at a later date.
+
+3
+00:00:08,301 --> 00:00:11,853
+- You think that you've been taught things like confidence intervals
+
+4
+00:00:11,993 --> 00:00:15,109
+in an elementary statistical course that would let you do this;
+
+5
+00:00:15,250 --> 00:00:17,382
+but if you really studied carefully,
+
+6
+00:00:17,522 --> 00:00:19,641
+you'd know that they don't let you do this.
+
+7
+00:00:19,782 --> 00:00:23,551
+A really principled frequentist can't produce a probability distribution...
+
+8
+00:00:23,692 --> 00:00:26,658
+- The conclusion we want to point out when we think about valuation
+
+9
+00:00:26,797 --> 00:00:30,483
+is the fact that means are scarce. I alluded to this already that
+
+10
+00:00:30,623 --> 00:00:33,802
+as finite beings we can't will our ends to be attained.
+
+11
+00:00:33,942 --> 00:00:38,803
+- A statistical description of the government's net-of-interest surplus.
+
+12
+00:00:38,944 --> 00:00:43,573
+- ...deflation, I think that yields could drop to say, less than 1%
+
+13
+00:00:43,713 --> 00:00:47,102
+on the 10 years and less than 2% on the 30 years...
+
+14
+00:00:47,241 --> 00:00:50,733
+- ...that would effectively be a takeover of monetary policy by the Congress. - Oh, hello!
+
+15
+00:00:50,874 --> 00:00:54,472
+Daunting, right? Might even make you feel stupid.
+
+16
+00:00:54,612 --> 00:00:56,603
+Perhaps it's no wonder then,
+
+17
+00:00:56,743 --> 00:00:59,784
+while even with the ongoing economic failures across the world:
+
+18
+00:00:59,924 --> 00:01:02,981
+inequality, increasing poverty, debt collapse,
+
+19
+00:01:03,121 --> 00:01:05,533
+bank failures, unemployment rising,
+
+20
+00:01:05,673 --> 00:01:08,534
+very few today seem to be able to understand,
+
+21
+00:01:08,674 --> 00:01:11,156
+let alone discuss, modern economics,
+
+22
+00:01:11,296 --> 00:01:13,296
+outside, of course, the delegation game
+
+23
+00:01:13,396 --> 00:01:15,587
+where the only attempted solutions people know
+
+24
+00:01:15,727 --> 00:01:19,511
+is the mere shifting around of the deck chairs on the Titanic,
+
+25
+00:01:19,650 --> 00:01:24,322
+assuming some new politician, central bank policy, or corporate legislation
+
+26
+00:01:24,462 --> 00:01:26,542
+is going to save the day.
+
+27
+00:01:26,682 --> 00:01:31,123
+Some years back, after coming to the conclusion that our politicians,
+
+28
+00:01:31,263 --> 00:01:36,606
+legislators, and established authorities just might be provably incompetent
+
+29
+00:01:36,746 --> 00:01:40,849
+when it comes to the truly intelligent management of our society,
+
+30
+00:01:40,989 --> 00:01:44,546
+I started to look for questions and answers on my own,
+
+31
+00:01:45,179 --> 00:01:47,935
+asking those questions about things
+
+32
+00:01:48,075 --> 00:01:51,754
+that many today either seem to take for granted, ignore or even worse,
+
+33
+00:01:51,894 --> 00:01:55,580
+assume that they have no capacity or business investigating at all,
+
+34
+00:01:55,719 --> 00:01:58,159
+since our credentialed authorities in control
+
+35
+00:01:58,299 --> 00:02:01,072
+must be smarter, more informed.
+
+36
+00:02:01,212 --> 00:02:03,621
+It's a sad staple of modern culture, you know,
+
+37
+00:02:03,760 --> 00:02:06,917
+the old "Relax, turn on the TV, keep going into debt,
+
+38
+00:02:07,058 --> 00:02:09,435
+and pump out a bunch of kids while you're at it,"
+
+39
+00:02:09,574 --> 00:02:12,719
+but most importantly, keep showing up at those jobs
+
+40
+00:02:12,860 --> 00:02:15,617
+which you have likely already fooled yourself into believing
+
+41
+00:02:15,757 --> 00:02:18,206
+serve some legitimate social role.
+
+42
+00:02:18,346 --> 00:02:22,144
+Remember, the 1% of the world that owns 40% of the planet's wealth
+
+43
+00:02:22,283 --> 00:02:26,944
+did not get that way with you understanding how the world really works.
+
+44
+00:02:27,085 --> 00:02:30,743
+Nevertheless, and such cynicism aside (I'm sorry),
+
+45
+00:02:30,883 --> 00:02:33,223
+I decided that I needed to start again,
+
+46
+00:02:33,364 --> 00:02:35,676
+if you will, and ask some fundamental questions
+
+47
+00:02:35,816 --> 00:02:38,750
+about stuff most have simply written off and forgotten.
+
+48
+00:02:38,889 --> 00:02:42,458
+If you were to take a poll today of our species, asking what truly are
+
+49
+00:02:42,598 --> 00:02:46,769
+the most fundamental questions that pertain to human survival and prosperity,
+
+50
+00:02:46,909 --> 00:02:51,004
+such as, I don't know, what really supports human life, how food grows,
+
+51
+00:02:51,145 --> 00:02:55,319
+what energy is, what creates and reinforces good public health,
+
+52
+00:02:55,459 --> 00:02:59,973
+what defines a useful or detrimental belief system,
+
+53
+00:03:00,544 --> 00:03:04,848
+you can rest assured, that the vast majority would have more concrete answers
+
+54
+00:03:04,987 --> 00:03:11,865
+about baseball statistics, fashion trends, sitcom plots, and religious scriptures.
+
+55
+00:03:12,911 --> 00:03:16,403
+Not to demean the cultural pleasures and creativity of expression
+
+56
+00:03:16,544 --> 00:03:18,562
+that creates enjoyment in this life,
+
+57
+00:03:18,701 --> 00:03:22,742
+but we have a distortion of priority that has proven incredibly detrimental
+
+58
+00:03:22,883 --> 00:03:25,611
+to the future of our sustainability on this planet,
+
+59
+00:03:25,751 --> 00:03:28,597
+where the majority facing clear mounting problems
+
+60
+00:03:28,736 --> 00:03:32,859
+not only doesn't understand what the root of such problems really are,
+
+61
+00:03:33,000 --> 00:03:36,069
+they don't even know what questions to ask;
+
+62
+00:03:36,942 --> 00:03:40,475
+and today, there is no greater destructive ignorance at hand,
+
+63
+00:03:40,616 --> 00:03:45,394
+than the vastly delusional concept known as modern economics.
+
+64
+00:03:45,533 --> 00:03:50,456
+It is in this fundamental context that I found the most interest.
+
+65
+00:03:51,221 --> 00:03:53,336
+What is an economy?
+
+66
+00:03:53,475 --> 00:03:56,469
+Where does its foundational premise come from?
+
+67
+00:03:56,610 --> 00:03:59,915
+What are we relating to exactly?
+
+68
+00:04:00,055 --> 00:04:04,692
+How is societal organization finding a benchmark for itself?
+
+69
+00:04:04,831 --> 00:04:07,281
+Is there a benchmark? What are we doing?
+
+70
+00:04:07,420 --> 00:04:10,688
+Why does the discussion of this subject appear to be so elitist
+
+71
+00:04:10,829 --> 00:04:15,240
+in its vocabulary and orientation? Is it really that complicated?
+
+72
+00:04:16,156 --> 00:04:19,669
+I became so tired of being called ignorant of the subject
+
+73
+00:04:19,810 --> 00:04:22,750
+by self-proclaimed experts I've challenged,
+
+74
+00:04:22,889 --> 00:04:25,740
+I decided to take it upon myself to read the entire
+
+75
+00:04:25,879 --> 00:04:28,954
+macro-economics curriculum of Harvard University
+
+76
+00:04:29,093 --> 00:04:31,423
+from the undergraduate to the PhD level,
+
+77
+00:04:31,564 --> 00:04:35,547
+along with all the staples of influence: F.A. Hayek, John Maynard Keynes,
+
+78
+00:04:35,687 --> 00:04:39,632
+Ludwig von Mises; and I'll tell you what, I'm really glad I did
+
+79
+00:04:39,771 --> 00:04:43,728
+because I had some very poor judgments that needed correction,
+
+80
+00:04:43,867 --> 00:04:47,379
+not so much regarding my views about economics,
+
+81
+00:04:47,519 --> 00:04:50,543
+but that life is short, and I wasted an enormous,
+
+82
+00:04:50,684 --> 00:04:54,045
+unforgivable amount of time reading this outdated,
+
+83
+00:04:54,185 --> 00:04:56,572
+overly-intellectualized gibberish.
+
+84
+00:04:56,711 --> 00:04:59,301
+[Glass Breaking] Ah, shit!
+
+85
+00:04:59,442 --> 00:05:03,170
+Bob, would you take care of that please? The fuse panel.
+
+86
+00:05:03,310 --> 00:05:06,728
+Be careful man, it's not... [Explosion][Bob screaming]
+
+87
+00:05:07,754 --> 00:05:10,033
+As the following episode will detail,
+
+88
+00:05:10,173 --> 00:05:13,177
+modern economics is not true economics at all.
+
+89
+00:05:13,317 --> 00:05:18,322
+It's a mere ideological philosophy, built upon a series of presuppositions
+
+90
+00:05:18,461 --> 00:05:21,592
+that have been given the illusion of permanence.
+
+91
+00:05:21,733 --> 00:05:25,559
+There is absolutely no relationship to the scientific integrity
+
+92
+00:05:25,699 --> 00:05:28,633
+of our knowledge of the environment built into this model.
+
+93
+00:05:28,773 --> 00:05:31,434
+The monetary-market system of religious belief
+
+94
+00:05:31,574 --> 00:05:35,227
+is at the core of the vast majority of ecological and social imbalance
+
+95
+00:05:35,367 --> 00:05:37,225
+we see in the world today.
+
+96
+00:05:37,365 --> 00:05:42,504
+Sadly, it is in the face of normality, so many look past it.
+
+97
+00:05:43,009 --> 00:05:46,165
+We might begin to see that this principal notion and practice
+
+98
+00:05:46,305 --> 00:05:49,112
+is truly a problem in society, and to me,
+
+99
+00:05:49,252 --> 00:05:52,108
+it is at the heart of a culture in decline.
+
+100
+00:06:22,733 --> 00:06:26,722
+Earth: Curious little ball of rock, gas and water, isn't it?
+
+101
+00:06:26,862 --> 00:06:30,446
+Hard to believe this little bubble of chemical elements floating in space,
+
+102
+00:06:30,586 --> 00:06:34,049
+basically powered by the sun, could give rise to our colorful,
+
+103
+00:06:34,189 --> 00:06:37,590
+yet rather troubling super-monkey species,
+
+104
+00:06:37,730 --> 00:06:42,727
+a species often appearing pretty serious in its interest to destroy its habitat,
+
+105
+00:06:42,867 --> 00:06:46,563
+though I should say pretty serious in its interest to destroy itself.
+
+106
+00:06:47,117 --> 00:06:49,341
+- What is democracy?
+
+107
+00:06:50,048 --> 00:06:53,590
+- It's got something to do with young men killing each other, I believe.
+
+108
+00:06:56,396 --> 00:06:59,064
+- Excuse me a second. Bob, what the hell was that?
+
+109
+00:06:59,204 --> 00:07:03,000
+The cut away, it wasn't funny. It was just depressing.
+
+110
+00:07:03,139 --> 00:07:06,627
+Couldn't you find some guy shooting a bottle rocket out of his ass or something?
+
+111
+00:07:09,588 --> 00:07:13,252
+You know what our demographic is and the point of the show, right?
+
+112
+00:07:13,391 --> 00:07:15,737
+Okay, well please.
+
+113
+00:07:15,877 --> 00:07:18,922
+Anyway, perhaps our immaturity is just a phase,
+
+114
+00:07:19,062 --> 00:07:21,502
+a tragically comedic rite of passage,
+
+115
+00:07:21,642 --> 00:07:23,982
+no different than children that need to be burned
+
+116
+00:07:24,122 --> 00:07:27,055
+by a hot stove in order to realize they shouldn't touch it,
+
+117
+00:07:27,196 --> 00:07:29,391
+or what the physics behind it may be.
+
+118
+00:07:29,531 --> 00:07:32,333
+Nevertheless, the history and characteristics of this little orb
+
+119
+00:07:32,473 --> 00:07:35,703
+can be scientifically described with a good deal of accuracy:
+
+120
+00:07:35,843 --> 00:07:38,825
+A couple of billion years old now, a composite of gas and dust
+
+121
+00:07:38,964 --> 00:07:42,300
+that resulted mostly from a large chemical reaction long ago,
+
+122
+00:07:42,440 --> 00:07:44,981
+likely an exploding star or supernova;
+
+123
+00:07:45,598 --> 00:07:49,927
+and over millions of years this dust clustered into relatively big chunks of rock,
+
+124
+00:07:50,067 --> 00:07:52,517
+a pronounced gravitational field emerged,
+
+125
+00:07:52,658 --> 00:07:55,461
+our chemical elements were slowly reorganized,
+
+126
+00:07:55,601 --> 00:07:59,347
+and conditions emerged to enable water and an atmosphere,
+
+127
+00:07:59,487 --> 00:08:03,471
+which is what bred the first single-celled organisms;
+
+128
+00:08:03,610 --> 00:08:06,243
+and so went the slow process of mutation
+
+129
+00:08:06,384 --> 00:08:10,523
+into the very amusing circumstance we have today: us.
+
+130
+00:08:11,487 --> 00:08:14,595
+Of course, you are free to believe whatever creation story you like:
+
+131
+00:08:14,735 --> 00:08:19,078
+a rib from Adam, alien cross pollination, primordial ooze.
+
+132
+00:08:19,218 --> 00:08:22,415
+At the end of the day, the utility of such knowledge is quite small.
+
+133
+00:08:22,555 --> 00:08:24,903
+In fact, our little monkey brains
+
+134
+00:08:25,043 --> 00:08:28,377
+might never have a complete picture of something so complex.
+
+135
+00:08:28,586 --> 00:08:32,119
+Yet what we do know is that the universe is governed by laws,
+
+136
+00:08:32,259 --> 00:08:35,736
+not moral or religious laws, but laws that were around
+
+137
+00:08:35,876 --> 00:08:39,602
+long before we ever evolved a brain to understand them.
+
+138
+00:08:39,743 --> 00:08:43,040
+Laws that very clearly point out that we either adapt to them
+
+139
+00:08:43,179 --> 00:08:46,407
+and respect them, or we suffer the consequences.
+
+140
+00:08:46,548 --> 00:08:50,546
+Such is the true face of God: the Laws of Nature.
+
+141
+00:08:52,019 --> 00:08:54,417
+In many ways, the history of our universe
+
+142
+00:08:54,557 --> 00:08:56,894
+is the history of our understanding of it,
+
+143
+00:08:57,033 --> 00:08:59,248
+and we have come a long way as a species
+
+144
+00:08:59,388 --> 00:09:03,024
+with respect to how we organize our lives around these rules.
+
+145
+00:09:03,163 --> 00:09:05,639
+Likely the best example of this adaptation,
+
+146
+00:09:05,778 --> 00:09:09,338
+or in many ways lack thereof, is how we think about economy,
+
+147
+00:09:09,479 --> 00:09:12,124
+the foundation of our social survival.
+
+148
+00:09:12,264 --> 00:09:15,581
+Many thousands of years ago, our super-monkey brethren
+
+149
+00:09:15,721 --> 00:09:18,289
+began to discover how to engage nature.
+
+150
+00:09:18,429 --> 00:09:21,358
+We went from being completely at the mercy of the habitat,
+
+151
+00:09:21,499 --> 00:09:23,564
+gathering our food with some hunting,
+
+152
+00:09:23,703 --> 00:09:27,489
+living and migrating around the natural seasonal regeneration,
+
+153
+00:09:27,629 --> 00:09:31,461
+to an agricultural revolution, learning how to cultivate food,
+
+154
+00:09:31,600 --> 00:09:34,498
+create ever [more] sophisticated tools to ease labor
+
+155
+00:09:34,638 --> 00:09:38,162
+and in effect, learn how to mimic nature itself.
+
+156
+00:09:38,302 --> 00:09:41,984
+In fact, this new awareness and ever-increasing understanding
+
+157
+00:09:42,124 --> 00:09:44,985
+to harness the processes of nature to our advantage
+
+158
+00:09:45,125 --> 00:09:48,929
+is what has led to the vast technological innovation we see today.
+
+159
+00:09:49,070 --> 00:09:52,608
+If nature is doing something, odds are we can understand how
+
+160
+00:09:52,748 --> 00:09:56,913
+through these dynamic scientific principles, from artificial intelligence today
+
+161
+00:09:57,052 --> 00:10:00,111
+which works to emulate actual neurological processes,
+
+162
+00:10:00,251 --> 00:10:03,150
+to molecular engineering which uses the atomic logic
+
+163
+00:10:03,291 --> 00:10:05,769
+to manually recreate material objects.
+
+164
+00:10:05,908 --> 00:10:10,475
+And now, ever-important blood shifting erectile dysfunction drugs,
+
+165
+00:10:10,615 --> 00:10:12,911
+which if you have being watching TV recently,
+
+166
+00:10:13,051 --> 00:10:17,360
+must be the most epidemic health crisis in the Western world today.
+
+167
+00:10:17,500 --> 00:10:20,604
+Since this revolution, human society became less nomadic,
+
+168
+00:10:20,744 --> 00:10:22,681
+slowly merging into cities,
+
+169
+00:10:22,821 --> 00:10:25,883
+and systems of labor specialization began to rise
+
+170
+00:10:26,023 --> 00:10:29,913
+along with means for exchange. Barter is a common example.
+
+171
+00:10:30,053 --> 00:10:33,273
+You need some eggs? Maybe give some firewood you chopped up
+
+172
+00:10:33,413 --> 00:10:35,619
+in exchange for the dairy farmer's work.
+
+173
+00:10:35,759 --> 00:10:40,191
+Yet, such practices became cumbersome and impractical after a while;
+
+174
+00:10:40,331 --> 00:10:43,271
+so the idea of using some rare fancy rocks,
+
+175
+00:10:43,410 --> 00:10:47,752
+like gold and silver as a medium of exchange, eased these transactions
+
+176
+00:10:47,893 --> 00:10:51,840
+through a system of pricing goods in terms of their relative value.
+
+177
+00:10:51,980 --> 00:10:56,276
+This gave birth to what we know today as the adjustable price system
+
+178
+00:10:56,416 --> 00:11:00,075
+which, through the public's aggregate patterns of exchange and production,
+
+179
+00:11:00,215 --> 00:11:02,644
+creates a crude, yet semi-workable logic
+
+180
+00:11:02,783 --> 00:11:06,249
+where the prices of goods reflect the balance of supply and demand,
+
+181
+00:11:06,389 --> 00:11:10,957
+otherwise known as the market or market value. Let me explain.
+
+182
+00:11:14,000 --> 00:11:17,453
+When you stumble into the mall and buy the 85th generation
+
+183
+00:11:17,594 --> 00:11:22,620
+iPoop 4G mp3 colostomy-bag camera phone waffle maker,
+
+184
+00:11:22,759 --> 00:11:27,437
+you are creating economic signal information that is used to calculate demand,
+
+185
+00:11:27,577 --> 00:11:30,693
+local and regional preferences, and other resulting data
+
+186
+00:11:30,833 --> 00:11:33,949
+in concert with the millions of other impulsive consumers
+
+187
+00:11:34,090 --> 00:11:37,245
+who, having also likely bought the 84th generation
+
+188
+00:11:37,384 --> 00:11:40,071
+just two months prior for twice the price,
+
+189
+00:11:40,211 --> 00:11:43,365
+creates an aggregate flow of input data and feedback
+
+190
+00:11:43,505 --> 00:11:48,159
+that allows for an ostensibly rational regulation of resource allocation,
+
+191
+00:11:48,299 --> 00:11:51,649
+production, distribution, labor requirements, and of course
+
+192
+00:11:51,788 --> 00:11:56,049
+price consensus in the market based on perceived supply and demand,
+
+193
+00:11:56,190 --> 00:11:58,886
+not to mention the general data of how the marketing team
+
+194
+00:11:59,025 --> 00:12:01,495
+can screw you over even more later on.
+
+195
+00:12:01,634 --> 00:12:04,837
+This mechanism is partly what the ultimate high priest
+
+196
+00:12:04,977 --> 00:12:09,456
+of our current economic religion, Adam Smith, was alluding to
+
+197
+00:12:09,596 --> 00:12:13,999
+with his 'invisible hand' notion of causality in the free market.
+
+198
+00:12:14,139 --> 00:12:16,139
+And in many ways he was on to something.
+
+199
+00:12:16,278 --> 00:12:19,597
+It does work in a limited context and a crude way.
+
+200
+00:12:19,738 --> 00:12:24,358
+In fact, in the 1920's an economist named Ludwig von Mises put forward
+
+201
+00:12:24,498 --> 00:12:28,201
+the still high-standing claim that without the price mechanism
+
+202
+00:12:28,341 --> 00:12:31,835
+economic calculation and rational resource allocation
+
+203
+00:12:31,975 --> 00:12:35,408
+and general organization would be impossible.
+
+204
+00:12:35,548 --> 00:12:38,857
+He called it 'The Economic Calculation Problem'.
+
+205
+00:12:38,998 --> 00:12:41,732
+However things are much different today than they were 200 years ago
+
+206
+00:12:41,871 --> 00:12:44,250
+when Adam Smith published his 'Wealth of Nations'
+
+207
+00:12:44,389 --> 00:12:47,313
+or when Ludwig von Mises made his criticism of central planning.
+
+208
+00:12:47,453 --> 00:12:51,035
+The fact is the argument has changed. The economic debate now is
+
+209
+00:12:51,176 --> 00:12:54,591
+what is actually sustainable and progressive for the human species,
+
+210
+00:12:54,730 --> 00:12:57,466
+not to mere mechanics of the movement of the money.
+
+211
+00:12:57,605 --> 00:13:00,222
+While it is true the price system might allow
+
+212
+00:13:00,363 --> 00:13:03,095
+for the basic calculation of supply &amp; demand data,
+
+213
+00:13:03,235 --> 00:13:07,810
+to help rationally allocate labor, preference, distribution and the like,
+
+214
+00:13:07,950 --> 00:13:10,363
+it ignores the real operational factors
+
+215
+00:13:10,503 --> 00:13:13,941
+that relate to true, efficient earthly management
+
+216
+00:13:14,081 --> 00:13:16,504
+hence the true definition of economy
+
+217
+00:13:16,644 --> 00:13:20,062
+which is: optimized efficiency on all levels.
+
+218
+00:13:20,202 --> 00:13:24,707
+For instance, there is no consideration for optimum resource allocation
+
+219
+00:13:24,847 --> 00:13:27,107
+based on the material's most efficient purpose.
+
+220
+00:13:27,248 --> 00:13:30,287
+Rational allocation of resources is not rational
+
+221
+00:13:30,427 --> 00:13:34,860
+if the most conducive use of those natural materials, scientifically,
+
+222
+00:13:35,000 --> 00:13:38,511
+is not directly considered and brought into comparison. [REJECTED]
+
+223
+00:13:38,652 --> 00:13:41,612
+There is no consideration for the organizational efficiency
+
+224
+00:13:41,751 --> 00:13:44,702
+of technical production itself, and all you have to do is
+
+225
+00:13:44,842 --> 00:13:50,303
+analyze the waste machine of globalization to see this insanity at work.
+
+226
+00:13:50,443 --> 00:13:54,452
+There is also no consideration for regeneration needs or recycling protocols:
+
+227
+00:13:54,592 --> 00:13:59,769
+a true requirement for responsible rational resource use on a finite planet,
+
+228
+00:13:59,908 --> 00:14:02,932
+nor is there any true production or distribution efficiency
+
+229
+00:14:03,072 --> 00:14:05,561
+in any optimized scientific sense
+
+230
+00:14:05,701 --> 00:14:09,442
+as such a means is, as will be described more so in a moment,
+
+231
+00:14:09,582 --> 00:14:14,775
+also counter to the inherent logic of the market system itself.
+
+232
+00:14:14,916 --> 00:14:18,089
+These, coupled with many other serious parameters
+
+233
+00:14:18,229 --> 00:14:23,128
+needed for a truly efficient economy, are simply ignored or, even worse,
+
+234
+00:14:23,268 --> 00:14:27,312
+assumed to be inherent to the price mechanism's function
+
+235
+00:14:27,452 --> 00:14:29,893
+when they clearly are not.
+
+236
+00:14:31,210 --> 00:14:33,926
+You see, the price mechanism's concept of efficiency
+
+237
+00:14:34,066 --> 00:14:37,629
+translates the subjective mass interaction of consumers
+
+238
+00:14:37,769 --> 00:14:41,805
+into the narrow assessments of regional demand, production and distribution.
+
+239
+00:14:41,946 --> 00:14:45,773
+It has nothing to do with how or why the methods of industry are what they are.
+
+240
+00:14:45,913 --> 00:14:48,698
+Such factors are left up to the whim of the producers
+
+241
+00:14:48,839 --> 00:14:51,985
+operating for profit alone, completely decoupling
+
+242
+00:14:52,125 --> 00:14:56,738
+from the natural regulation of scientific principles of sustainability.
+
+243
+00:14:56,878 --> 00:14:58,485
+Aww, man!
+
+244
+00:15:01,601 --> 00:15:04,100
+You see, at the core of 'The Economic Calculation Problem'
+
+245
+00:15:04,240 --> 00:15:06,672
+is really the argument that we are completely irrational,
+
+246
+00:15:06,812 --> 00:15:10,860
+that we can't possibly be organized in a way that is structurally efficient;
+
+247
+00:15:11,000 --> 00:15:13,022
+we are too insane, essentially.
+
+248
+00:15:13,162 --> 00:15:15,870
+Therefore, we have to have a general economic anarchy
+
+249
+00:15:16,009 --> 00:15:19,480
+to organize our society and there's no other way around it.
+
+250
+00:15:20,621 --> 00:15:21,699
+(*Bullshit!*)
+
+251
+00:15:21,840 --> 00:15:25,357
+Again, today is very different than it was prior, and a quick review
+
+252
+00:15:25,496 --> 00:15:28,673
+of modern computer programming and systems engineering
+
+253
+00:15:28,813 --> 00:15:31,819
+will tell you that not only can the algorithmic intelligence
+
+254
+00:15:31,960 --> 00:15:35,181
+of our sensory and measurement technology today,
+
+255
+00:15:35,321 --> 00:15:38,667
+coupled with synergistic computer calculation,
+
+256
+00:15:38,807 --> 00:15:42,292
+orient all the previously existing factors taken into account
+
+257
+00:15:42,412 --> 00:15:44,412
+by the price mechanism as we know it,
+
+258
+00:15:44,543 --> 00:15:48,402
+the truly relevant yet missing factors for optimal efficiency
+
+259
+00:15:48,542 --> 00:15:51,667
+and sustainability could be brought into the equation.
+
+260
+00:15:51,807 --> 00:15:56,008
+This would be the making of a true economic calculation for industry,
+
+261
+00:15:56,148 --> 00:16:00,589
+not the crude truncated data put forward by price alone.
+
+262
+00:16:00,833 --> 00:16:03,516
+So, coming back to our household, the Earth,
+
+263
+00:16:03,657 --> 00:16:08,899
+what is this thing really? It's a system, a system of symbiotic laws.
+
+264
+00:16:09,038 --> 00:16:11,497
+At the core of all principles of sustainability
+
+265
+00:16:11,638 --> 00:16:15,786
+is recognition of the largest order system we can find, for reference.
+
+266
+00:16:15,926 --> 00:16:19,189
+The price mechanism on the other... [crash]
+
+267
+00:16:19,328 --> 00:16:21,391
+Bob, what was that?
+
+268
+00:16:22,547 --> 00:16:25,028
+Jesus Christ, Louie!
+
+269
+00:16:25,168 --> 00:16:27,876
+Bob, why didn't you tell me Louie was here already?
+
+270
+00:16:28,017 --> 00:16:30,839
+Ladies and gentlemen, we have a special guest here on Culture in Decline,
+
+271
+00:16:30,979 --> 00:16:34,437
+our local logic guru, Louie-the-Logic Gremlin.
+
+272
+00:16:34,577 --> 00:16:39,240
+Louie has a severe impatience for anything illogical, and he works to...
+
+273
+00:16:39,975 --> 00:16:42,740
+OK. Bob, you've got to get the goddamn Demo-Publican back in his cage
+
+274
+00:16:42,880 --> 00:16:45,745
+or Louie is going to freak out... Oh, shit! Cut the camera!
+
+275
+00:16:50,413 --> 00:16:52,862
+Sorry about that ladies and gentlemen. As I mentioned,
+
+276
+00:16:53,003 --> 00:16:56,436
+Louie here gets a little frustrated when it comes to anything illogical
+
+277
+00:16:56,576 --> 00:17:00,115
+and the Demo-Publican is sort of his mortal enemy.
+
+278
+00:17:00,255 --> 00:17:03,659
+Anyway, Louie, since we have you here, I want to ask you a few questions.
+
+279
+00:17:03,799 --> 00:17:06,069
+Is the free market actually
+
+280
+00:17:06,210 --> 00:17:10,500
+a good basis for sustainability for the human species?
+
+281
+00:17:29,179 --> 00:17:32,285
+Well, what about infinite wants and human needs?
+
+282
+00:17:32,424 --> 00:17:35,132
+How do we calculate such complexity?
+
+283
+00:18:38,489 --> 00:18:40,973
+Thank you very much Louie, I appreciate that.
+
+284
+00:18:41,114 --> 00:18:42,860
+Well, there you have it, folks.
+
+285
+00:18:43,000 --> 00:18:47,703
+However, logic aside, opinions about our economic system range dramatically.
+
+286
+00:18:47,844 --> 00:18:51,400
+So, to gain some public consensus on the issue, we now go live
+
+287
+00:18:51,539 --> 00:18:54,226
+to our New York 'Culture In Decline' correspondent,
+
+288
+00:18:54,366 --> 00:18:57,510
+Big Scotty D, who is live on Wall Street.
+
+289
+00:18:57,651 --> 00:19:01,312
+Thank you, Peter. This is Scotty D, in front of the New York Stock Exchange.
+
+290
+00:19:01,451 --> 00:19:03,664
+Today we're here in New York City
+
+291
+00:19:03,805 --> 00:19:07,542
+just to try to talk to some people on the street and find out a little bit
+
+292
+00:19:07,682 --> 00:19:11,500
+about what's going on in the world perception of economics.
+
+293
+00:19:11,640 --> 00:19:14,553
+Culture In Decline: Man On the Street
+
+294
+00:19:14,692 --> 00:19:17,216
+Sir, do you want to talk about the economy?
+
+295
+00:19:17,866 --> 00:19:20,389
+Would you like to talk about the economy?
+
+296
+00:19:23,000 --> 00:19:25,375
+Would you like to talk about the economy?
+
+297
+00:19:26,313 --> 00:19:28,245
+I really suck at this,
+
+298
+00:19:28,384 --> 00:19:31,417
+but I don't think people want to talk about economy either.
+
+299
+00:19:36,000 --> 00:19:39,384
+However, there was one guy who was willing to talk to me.
+
+300
+00:19:39,523 --> 00:19:41,803
+- What do you feel is the definition of economics?
+
+301
+00:19:41,943 --> 00:19:44,341
+Standing here in front of Wall Street, I'm just curious.
+
+302
+00:19:44,481 --> 00:19:46,596
+What do you think economics is?
+
+303
+00:19:46,736 --> 00:19:50,900
+- Well, I would say that economics is, is really just
+
+304
+00:19:51,039 --> 00:19:54,772
+just based on money, the things that's going on,
+
+305
+00:19:54,913 --> 00:19:59,135
+you know, from over here by Wall Street.
+
+306
+00:19:59,276 --> 00:20:05,115
+It's just money that makes the system ...
+
+307
+00:20:05,255 --> 00:20:09,860
+generate throughout NY city and for everybody in the world.
+
+308
+00:20:10,000 --> 00:20:12,921
+But it's just mainly a money thing, which makes the world go round.
+
+309
+00:20:13,060 --> 00:20:15,130
+I know what you are thinking. You're thinking
+
+310
+00:20:15,270 --> 00:20:18,255
+"What is this guy talking about?!"
+
+311
+00:20:18,395 --> 00:20:21,576
+But in reality, he probably knows as much about economics
+
+312
+00:20:21,717 --> 00:20:24,631
+as I know about interviewing people on the street.
+
+313
+00:20:24,770 --> 00:20:26,533
+And, seems like most of us
+
+314
+00:20:26,673 --> 00:20:29,299
+really don't know what the economy is all about anyway.
+
+315
+00:20:29,440 --> 00:20:32,383
+Back to you, Peter. *Man On The Streets*
+
+316
+00:20:32,522 --> 00:20:34,341
+Is it me or have you noticed that
+
+317
+00:20:34,481 --> 00:20:37,047
+there is more for sale in the world than ever before,
+
+318
+00:20:37,186 --> 00:20:40,118
+and I'm not referring to goods in your local store.
+
+319
+00:20:40,259 --> 00:20:42,870
+Today, the market rational is that
+
+320
+00:20:43,009 --> 00:20:46,201
+everything is for sale and nothing is sacred.
+
+321
+00:20:46,340 --> 00:20:50,484
+Need some cash? Why don't you rent out your forehead to commercial advertising?
+
+322
+00:20:50,625 --> 00:20:53,413
+Or better yet, why don't you buy the life insurance policy
+
+323
+00:20:53,553 --> 00:20:55,860
+of your elderly neighbor, and when she dies
+
+324
+00:20:56,000 --> 00:20:59,261
+you can get nice payout? Yep, it's legal!
+
+325
+00:20:59,402 --> 00:21:01,622
+Or maybe it's the little things that make you happy.
+
+326
+00:21:01,761 --> 00:21:04,202
+So, rather than put that blow-up doll in your car
+
+327
+00:21:04,343 --> 00:21:08,000
+to use the car pool lane (hehehehe),
+
+328
+00:21:09,631 --> 00:21:12,695
+just buy it, like you can in Minneapolis.
+
+329
+00:21:12,835 --> 00:21:17,569
+Or maybe you have an itch to slaughter that endangered black rhino in Africa.
+
+330
+00:21:17,710 --> 00:21:20,796
+Well, you can. Costs you about $150,000,
+
+331
+00:21:20,935 --> 00:21:23,320
+but hey, it's there. '150,
+
+332
+00:21:23,461 --> 00:21:25,728
+boy, I can't wait to eat that rhino!'
+
+333
+00:21:25,867 --> 00:21:29,739
+Or more seriously, maybe your kids are not excelling well in school.
+
+334
+00:21:29,878 --> 00:21:32,275
+Well, the market has a solution. Pay them!
+
+335
+00:21:32,415 --> 00:21:36,441
+Pay them to read and get good grades, like they do in Dallas, Texas.
+
+336
+00:21:36,580 --> 00:21:40,336
+But perhaps that is overkill, because by the time they hit college age
+
+337
+00:21:40,476 --> 00:21:43,734
+most prestigious universities will look the other way for admission
+
+338
+00:21:43,874 --> 00:21:48,613
+once a nice hefty donation is made for that new library wing.
+
+339
+00:21:48,752 --> 00:21:51,341
+Want to serve your country, but are tired of all those
+
+340
+00:21:51,481 --> 00:21:54,223
+pesky UN war rules and poor pay?
+
+341
+00:21:54,364 --> 00:21:57,886
+Just join the growing legion of private military contractors
+
+342
+00:21:58,027 --> 00:22:01,245
+who are slowly replacing the US military in general.
+
+343
+00:22:01,500 --> 00:22:03,221
+Or how about love?
+
+344
+00:22:03,361 --> 00:22:06,062
+Need a date, but don't want to wade through all the fog?
+
+345
+00:22:06,201 --> 00:22:09,994
+Women will now go on dates with the highest bidder on some dating sites.
+
+346
+00:22:10,134 --> 00:22:12,914
+Forget chatting, just fork out a couple hundred bucks
+
+347
+00:22:13,055 --> 00:22:16,326
+to entice the woman of your choice to allow you to pay for her dinner.
+
+348
+00:22:16,467 --> 00:22:19,249
+I am sure it will be a long lasting relationship.
+
+349
+00:22:19,388 --> 00:22:21,221
+Or perhaps most important,
+
+350
+00:22:21,361 --> 00:22:24,357
+does your business need a law passed to secure profits?
+
+351
+00:22:24,497 --> 00:22:27,154
+Well, just hire a lobbyist to influence Congress!
+
+352
+00:22:27,295 --> 00:22:30,127
+As the prior episode of Culture In Decline denoted,
+
+353
+00:22:30,267 --> 00:22:33,195
+there is nothing in the political and legal spectrum
+
+354
+00:22:33,335 --> 00:22:35,355
+that is not clearly for sale.
+
+355
+00:22:35,496 --> 00:22:38,784
+In fact, why do you think the court system allows most offenses
+
+356
+00:22:38,923 --> 00:22:41,355
+to be cleared with monetary funds?
+
+357
+00:22:41,776 --> 00:22:45,730
+But even if you do something really bad and you are stuck in jail
+
+358
+00:22:45,871 --> 00:22:47,903
+don't fret, because in some cases
+
+359
+00:22:48,044 --> 00:22:51,610
+you can about pay 80 bucks a night for a nice upgrade
+
+360
+00:22:51,750 --> 00:22:55,904
+to a clean quiet jail cell in a nice area of the prison.
+
+361
+00:22:56,250 --> 00:22:59,848
+You name it, you can buy it, and nothing is sacred.
+
+362
+00:22:59,989 --> 00:23:04,687
+143 years after the passage of the 13th Amendment of the US Constitution
+
+363
+00:23:04,826 --> 00:23:09,525
+and 60 years after Article 4 of the UN's Universal Declaration of Human Rights
+
+364
+00:23:09,664 --> 00:23:12,626
+banned slavery and the slave trade worldwide,
+
+365
+00:23:12,767 --> 00:23:16,020
+there are today more slaves than anytime in human history,
+
+366
+00:23:16,161 --> 00:23:19,989
+trafficking about 30 million for various profit schemes.
+
+367
+00:23:20,451 --> 00:23:22,853
+But, what about ethics, you might ask?
+
+368
+00:23:22,992 --> 00:23:25,681
+Well, what about it? Ethics and morality
+
+369
+00:23:25,820 --> 00:23:29,109
+continue to be redefined by the economic ethos of the day,
+
+370
+00:23:29,250 --> 00:23:31,989
+and when a Wall Street trader makes millions of dollars
+
+371
+00:23:32,128 --> 00:23:35,971
+betting against the currency and hence prosperity of another country,
+
+372
+00:23:36,111 --> 00:23:39,125
+I can assure you he is sleeping like a baby at night,
+
+373
+00:23:39,265 --> 00:23:42,285
+and why shouldn't he? He is simply doing what is rewarded
+
+374
+00:23:42,424 --> 00:23:45,617
+and reinforced by the economic system-at-large.
+
+375
+00:23:45,758 --> 00:23:47,837
+The market's inherent psychology
+
+376
+00:23:47,978 --> 00:23:51,375
+has nothing to do with anything except its own perpetuation.
+
+377
+00:23:51,516 --> 00:23:55,127
+When you hear politicians tell you that they are invading some poor country
+
+378
+00:23:55,267 --> 00:23:57,653
+to bring freedom and democracy,
+
+379
+00:23:57,794 --> 00:24:00,807
+you need to understand what those words really imply.
+
+380
+00:24:00,948 --> 00:24:03,160
+The freedom they bring is market freedom,
+
+381
+00:24:03,299 --> 00:24:06,859
+and the democracy that they bring is the democracy of purchasing power:
+
+382
+00:24:07,000 --> 00:24:09,240
+the freedom of using money for influence,
+
+383
+00:24:09,380 --> 00:24:13,999
+the freedom to, in fact, restrict the freedom of others.
+
+384
+00:24:14,138 --> 00:24:16,621
+However, let's get back to this technical stuff.
+
+385
+00:24:16,761 --> 00:24:19,546
+Putting aside the distortion of market rationale
+
+386
+00:24:19,685 --> 00:24:21,567
+that now puts everything for sale,
+
+387
+00:24:21,707 --> 00:24:24,207
+putting aside the false premise that the price mechanism
+
+388
+00:24:24,346 --> 00:24:27,239
+actually properly calculates the true attributes
+
+389
+00:24:27,378 --> 00:24:30,355
+of a sustainable and efficient economic practice,
+
+390
+00:24:30,494 --> 00:24:33,875
+and putting aside the basic value system disorder
+
+391
+00:24:34,016 --> 00:24:36,999
+radiating out of the overall basis of unfolding,
+
+392
+00:24:37,138 --> 00:24:42,998
+let's now take a little quiz. Welcome to modern Economics 101.
+
+393
+00:24:43,138 --> 00:24:45,423
+Question 1: If you lived on a planet
+
+394
+00:24:45,563 --> 00:24:48,155
+with finite resources and an expanding population,
+
+395
+00:24:48,295 --> 00:24:52,186
+would you encourage an economy based on the need for growth and consumption
+
+396
+00:24:52,326 --> 00:24:54,239
+to keep everything going?
+
+397
+00:24:54,378 --> 00:24:56,520
+Correct answer: No.
+
+398
+00:24:56,661 --> 00:25:00,741
+The fact that our economy literally requires constant consumption and growth
+
+399
+00:25:00,882 --> 00:25:03,859
+to keep GDP afloat and people employed
+
+400
+00:25:03,999 --> 00:25:08,105
+is the hallmark of not an economy, but an anti-economy.
+
+401
+00:25:08,804 --> 00:25:11,293
+Question 2: If you were a producer
+
+402
+00:25:11,432 --> 00:25:14,440
+would you make goods to be as durable and adaptable as possible
+
+403
+00:25:14,575 --> 00:25:16,575
+given the finite nature of resources
+
+404
+00:25:16,709 --> 00:25:19,663
+in an interest to maximize labor productivity?
+
+405
+00:25:19,804 --> 00:25:22,692
+Answer: Yes. Today it's the opposite,
+
+406
+00:25:22,833 --> 00:25:26,316
+and not only are all goods inferior the moment they are made
+
+407
+00:25:26,455 --> 00:25:30,622
+due to the cost-efficiency needs for corporations to remain competitive,
+
+408
+00:25:30,762 --> 00:25:34,999
+most companies also engage in what is called planned obsolescence
+
+409
+00:25:35,138 --> 00:25:39,250
+which deliberately reduces good quality to encourage repeat purchases
+
+410
+00:25:39,390 --> 00:25:41,053
+for more profit.
+
+411
+00:25:41,192 --> 00:25:44,580
+Question 3: If you were a socio-economic planner,
+
+412
+00:25:44,721 --> 00:25:47,859
+would you encourage everyone to buy one of everything,
+
+413
+00:25:48,000 --> 00:25:51,125
+hoarding that personal property, protectively,
+
+414
+00:25:51,265 --> 00:25:54,617
+even though many goods are used infrequently?
+
+415
+00:25:54,757 --> 00:25:57,828
+Answer: No. That would be inefficient.
+
+416
+00:25:57,969 --> 00:26:01,811
+The reality that goods are only as relevant as their use would be realized
+
+417
+00:26:01,951 --> 00:26:04,375
+and hence a system of shared access,
+
+418
+00:26:04,515 --> 00:26:07,269
+not blind restrictive universal ownership,
+
+419
+00:26:07,409 --> 00:26:10,524
+would be the most rational manner of unfolding.
+
+420
+00:26:10,663 --> 00:26:12,842
+Question 4: What about incentive?
+
+421
+00:26:12,981 --> 00:26:15,254
+Would you push a cut-throat, competititve environment
+
+422
+00:26:15,394 --> 00:26:18,787
+where everyone it is out for themselves or their little group?
+
+423
+00:26:18,926 --> 00:26:22,107
+Correct answer: No. Knowing what we know today
+
+424
+00:26:22,248 --> 00:26:25,145
+about the competitive mentality and how it creates abuse,
+
+425
+00:26:25,286 --> 00:26:29,308
+along with the reality that collaboration and the sharing of information
+
+426
+00:26:29,449 --> 00:26:32,860
+is truly the driver of progress on the social level,
+
+427
+00:26:33,000 --> 00:26:36,734
+competition would be seen as the most limiting of arrangements
+
+428
+00:26:36,875 --> 00:26:38,869
+as a philosophical practice.
+
+429
+00:26:39,009 --> 00:26:42,415
+Question 5: What would be the basis for reward today?
+
+430
+00:26:42,556 --> 00:26:46,074
+Would you require every human to submit to each other for labor
+
+431
+00:26:46,213 --> 00:26:48,630
+as to achieve the means for survival?
+
+432
+00:26:48,770 --> 00:26:51,553
+No. That would be crude and counter-productive,
+
+433
+00:26:51,693 --> 00:26:54,078
+given the state of technology.
+
+434
+00:26:54,219 --> 00:26:57,860
+Modern technical capacity has the ability to increase productivity
+
+435
+00:26:58,000 --> 00:27:00,229
+beyond anything known in human history,
+
+436
+00:27:00,368 --> 00:27:04,220
+not to mention secure more safety and efficiency in general.
+
+437
+00:27:04,359 --> 00:27:06,342
+To push human labor for income
+
+438
+00:27:06,482 --> 00:27:11,232
+in the face of this tool for vast improvement is just absurd.
+
+439
+00:27:12,109 --> 00:27:16,466
+Final thoughts: If we were to take a step back and reflect upon
+
+440
+00:27:16,606 --> 00:27:20,489
+how our human family is behaving across the world today,
+
+441
+00:27:20,628 --> 00:27:24,386
+from Western materialism to Islamic extremism,
+
+442
+00:27:24,527 --> 00:27:27,447
+from nuclear war to necrophilia,
+
+443
+00:27:27,586 --> 00:27:32,196
+we are faced with a dark, yet extremely entertaining reality.
+
+444
+00:27:32,336 --> 00:27:35,970
+The very real fact [is] that we are monkeys in the wild,
+
+445
+00:27:36,109 --> 00:27:38,365
+barely out of the jungle on this planet
+
+446
+00:27:38,505 --> 00:27:40,933
+in the words of the late, great George Carlin,
+
+447
+00:27:41,073 --> 00:27:43,688
+inching out of the Dark Ages, in fact,
+
+448
+00:27:43,827 --> 00:27:47,999
+from a period of deep fear and confusion with respect to who we are,
+
+449
+00:27:48,138 --> 00:27:51,155
+what we are doing, how we relate to each other,
+
+450
+00:27:51,296 --> 00:27:54,999
+not to mention how we relate to the habitat that spawned us.
+
+451
+00:27:55,138 --> 00:27:58,998
+On one side of the spectrum we have a vast spectacle of human conceit:
+
+452
+00:27:59,138 --> 00:28:02,943
+stubborn ignorance, so much so that if you are like me,
+
+453
+00:28:03,084 --> 00:28:05,995
+sometimes you wonder why we should try at all.
+
+454
+00:28:06,134 --> 00:28:09,214
+That maybe this species deserves everything it gets
+
+455
+00:28:09,355 --> 00:28:11,999
+and its fate as an evolutionary cul-de-sac,
+
+456
+00:28:12,138 --> 00:28:18,089
+a failed genetic mutation, might be an ideal hope for this universe.
+
+457
+00:28:18,712 --> 00:28:20,723
+Cynicism aside however,
+
+458
+00:28:20,864 --> 00:28:25,746
+it's easy to see that there is a growing change in the minority
+
+459
+00:28:25,885 --> 00:28:28,384
+which will slowly become majority if we let it.
+
+460
+00:28:28,523 --> 00:28:30,753
+An awakening is happening, an awakening
+
+461
+00:28:30,894 --> 00:28:34,072
+where people have stopped imposing their traditional ideals
+
+462
+00:28:34,211 --> 00:28:36,835
+and various ideological baggage on the world,
+
+463
+00:28:36,974 --> 00:28:39,692
+and instead are starting to listen,
+
+464
+00:28:39,832 --> 00:28:43,607
+listening to what the tools of our ingenuity have afforded us,
+
+465
+00:28:43,747 --> 00:28:47,020
+listening to the message of nature itself.
+
+466
+00:28:47,161 --> 00:28:50,134
+If there is any context which needs a serious intervention
+
+467
+00:28:50,273 --> 00:28:52,667
+with respect to the natural laws that govern us,
+
+468
+00:28:52,807 --> 00:28:56,929
+if there is any context where we need to simply pay attention,
+
+469
+00:28:57,068 --> 00:29:01,191
+prepare to drop all of our prior assumptions and change accordingly,
+
+470
+00:29:01,330 --> 00:29:03,722
+it is in the economic context.
+
+471
+00:29:04,624 --> 00:29:07,528
+Economics is not just some arbitrary abstraction
+
+472
+00:29:07,667 --> 00:29:09,985
+for processing and distributing resources.
+
+473
+00:29:10,125 --> 00:29:15,147
+It is an underlying value molder that programs us into modes of behavior
+
+474
+00:29:15,288 --> 00:29:18,067
+that extend into all areas of our psychology.
+
+475
+00:29:18,207 --> 00:29:22,211
+It is the active global religion whether people like it or not,
+
+476
+00:29:22,351 --> 00:29:26,860
+and for those of us that wish to see reason triumph over dogma,
+
+477
+00:29:27,000 --> 00:29:30,260
+we have a long, long road ahead.
+
+478
+00:29:30,785 --> 00:29:33,686
+Advocates of the free-market model of economics will tell you
+
+479
+00:29:33,826 --> 00:29:37,576
+that there is no other system possible to calculate society,
+
+480
+00:29:37,715 --> 00:29:40,002
+that the competitive basis is the only way
+
+481
+00:29:40,143 --> 00:29:42,403
+to incentivize our primitive culture.
+
+482
+00:29:42,544 --> 00:29:46,134
+They will tell you that reduced economic interference of government
+
+483
+00:29:46,275 --> 00:29:50,999
+is the key to preserving the true integrity of the market economy
+
+484
+00:29:51,099 --> 00:29:53,632
+and also preserve our so-called liberty,
+
+485
+00:29:53,772 --> 00:29:55,918
+which they say would be quickly corrupted
+
+486
+00:29:56,058 --> 00:29:58,545
+as tyranny and oppression must occur
+
+487
+00:29:58,684 --> 00:30:03,865
+if any type of collaborative, designed economic practice was applied.
+
+488
+00:30:04,279 --> 00:30:06,700
+They talk of the 'true' free market:
+
+489
+00:30:06,839 --> 00:30:10,163
+a utopian ideal that claims the invisible hand,
+
+490
+00:30:10,303 --> 00:30:14,267
+if allowed to run without interference, would alleviate the poverty,
+
+491
+00:30:14,406 --> 00:30:17,903
+deprivation, abuse, corruption, conflict and inefficiency
+
+492
+00:30:18,042 --> 00:30:20,517
+so common in the world today.
+
+493
+00:30:21,284 --> 00:30:25,366
+Well, as with all religions, delusion is common,
+
+494
+00:30:25,506 --> 00:30:28,700
+because today the market is actually more free than ever
+
+495
+00:30:28,839 --> 00:30:32,240
+with the state being nothing more than a parent corporation
+
+496
+00:30:32,380 --> 00:30:37,186
+working to assist its commercial subsidiaries which support it.
+
+497
+00:30:37,326 --> 00:30:41,347
+Everything is for sale, and no one is accountable.
+
+498
+00:30:42,070 --> 00:30:46,859
+All natural laws and physical realities that would comprise the basis
+
+499
+00:30:47,000 --> 00:30:50,503
+for true technical earthly efficiency
+
+500
+00:30:50,644 --> 00:30:53,299
+and awareness and reasoning that, if allowed,
+
+501
+00:30:53,440 --> 00:30:56,343
+can literally transform the world into a place
+
+502
+00:30:56,482 --> 00:31:00,389
+with vast abundance and prosperity never before seen,
+
+503
+00:31:00,529 --> 00:31:02,859
+have been buried and dismissed,
+
+504
+00:31:03,000 --> 00:31:06,979
+only to be overshadowed by a certain kind of efficiency,
+
+505
+00:31:07,118 --> 00:31:11,586
+market efficiency, an efficiency that tracks money and money alone,
+
+506
+00:31:11,726 --> 00:31:14,058
+an efficiency that is literally decoupled
+
+507
+00:31:14,198 --> 00:31:17,146
+from everything that supports and secures life itself,
+
+508
+00:31:17,286 --> 00:31:20,067
+an efficiency that is circular in its reasoning
+
+509
+00:31:20,208 --> 00:31:24,274
+as it has no recognition of the physical laws of nature,
+
+510
+00:31:24,413 --> 00:31:28,557
+the laws of nature, which are, in fact, the only real true government
+
+511
+00:31:28,696 --> 00:31:32,961
+and regulatory system that has or will ever exist.
+
+512
+00:31:33,641 --> 00:31:36,216
+But then again, who is to say it matters?
+
+513
+00:31:36,355 --> 00:31:39,615
+Maybe we should all just take it in stride.
+
+514
+00:31:39,755 --> 00:31:42,862
+Maybe this reality show of humankind,
+
+515
+00:31:43,001 --> 00:31:46,479
+this satirical tragic parody of itself, to be sure,
+
+516
+00:31:46,618 --> 00:31:50,057
+doing all it knows, maybe this is the way it is
+
+517
+00:31:50,196 --> 00:31:52,859
+and our brains, our genes are messed up,
+
+518
+00:31:53,000 --> 00:31:55,565
+and we are just waiting for the final laugh track
+
+519
+00:31:55,704 --> 00:32:01,001
+when Spaceship Earth slams into that psychological brick wall.
+
+520
+00:32:01,662 --> 00:32:03,756
+I guess time will tell.
+
+521
+00:32:03,895 --> 00:32:06,926
+And until then, sit back, grab some popcorn
+
+522
+00:32:07,067 --> 00:32:10,326
+and keep watching the greatest reality show of all time.
+
+523
+00:32:10,467 --> 00:32:13,449
+And until next time, I am Peter Joseph,
+
+524
+00:32:13,588 --> 00:32:16,844
+an agent and victim of a Culture in Decline.
+
+525
+00:33:05,656 --> 00:33:08,588
+Would you like to talk about the economy?
+
