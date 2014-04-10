@@ -15,6 +15,7 @@ import org.w3c.dom.Element;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.Set;
 
 public class AIMLFileParser {
@@ -26,26 +27,33 @@ public class AIMLFileParser {
     private DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
     private DocumentBuilder dBuilder;
     private Document document;
-    private HashMap<String, String> patternAndTemplates = new HashMap<String, String>();
-    private HashMap<String, HashMap<String, String>> first = new HashMap<String, HashMap<String, String>>();
-    private HashMap<String, HashMap<String,String>> significant =
-            new HashMap<String, HashMap<String, String>>();
+    private HashMap<String, ArrayList<String>> patternAndTemplates = new HashMap<String, ArrayList<String>>();
+    private HashMap<String, HashMap<String, ArrayList<String>>> first = new HashMap<String, HashMap<String, ArrayList<String>>>();
+    private HashMap<String, HashMap<String,ArrayList<String>>> significant =
+            new HashMap<String, HashMap<String, ArrayList<String>>>();
     private HashMap<String, Integer> wordCounts = new HashMap<String, Integer>();
     private int numOfWords = 0;
+    private Boolean si = true;
 
 
-    public AIMLFileParser()throws Exception{
+    public AIMLFileParser(Boolean sig)throws Exception{
+        si = sig;
         readFiles();
+    }
+
+    public void setSignificance(boolean boo){
+        si= boo;
     }
 
     public void readFiles(){
         try{
+            if(!movieNames.exists()){
+                subtitleParser.startParsing();
+            }
             BufferedReader movieNamesReader = new BufferedReader(new FileReader(movieNames));
             //System.out.println("creating reader");
 
-            if(!movieNames.exists()){
-            subtitleParser.startParsing();
-            }
+
 
             String movie = "hello";
             while((movie = movieNamesReader.readLine()) != null){
@@ -64,7 +72,11 @@ public class AIMLFileParser {
             System.err.println(e.getMessage());
         }
         createWordSignificance();
-        createIndexBySignificant();
+        if(si){
+            createIndexBySignificant();
+        }else {
+            createIndexByFirst();
+        }
 
     }
 
@@ -83,9 +95,15 @@ public class AIMLFileParser {
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
                 Element eElement = (Element) nNode;
-
-                patternAndTemplates.put(eElement.getElementsByTagName("pattern").item(0).getTextContent(),
-                        eElement.getElementsByTagName("template").item(0).getTextContent());
+                if(patternAndTemplates.containsKey(eElement.getElementsByTagName("pattern").item(0).getTextContent())){
+                    patternAndTemplates.get(eElement.getElementsByTagName("pattern").item(0).getTextContent())
+                            .add(eElement.getElementsByTagName("template").item(0).getTextContent());
+                }else{
+                    ArrayList<String> array = new ArrayList<String>();
+                    array.add(eElement.getElementsByTagName("template").item(0).getTextContent());
+                    patternAndTemplates.put(eElement.getElementsByTagName("pattern").item(0).getTextContent(),
+                            array);
+                }
             }
         }
 
@@ -93,18 +111,44 @@ public class AIMLFileParser {
 
     public void Match(String userInput){
         PatternMatcher matcher = new PatternMatcher();
-        //System.out.println("create patternmatcher");
-        if(getMostSignificant(userInput)==null){
-            System.out.println("I don't understand");
-            return;
-        }
-        String bestMatch = matcher.ClosestWords(userInput, significant.get(getMostSignificant(userInput)).keySet());
+        if(si){
+            if(significant.containsKey(getMostSignificant(userInput))){
+                if(getMostSignificant(userInput)==null){
+                    System.out.println("I don't understand");
+                    return;
+                }
+                //System.out.println(getMostSignificant(userInput));
+                String bestMatch = matcher.ClosestWords(userInput, significant.get(getMostSignificant(userInput)).keySet());
 
-        //System.out.println("best match: " +bestMatch);
-        if(bestMatch.equals("")||bestMatch == null){
-            System.out.println("I don't understand");
-        }else{
-            System.out.println(significant.get(getMostSignificant(userInput)).get(bestMatch));
+                System.out.println("best match: " +bestMatch);
+                if(bestMatch.equals("")||bestMatch == null){
+                    //System.out.println("I don't understand");
+                }else{
+                    Random r = new Random();
+                    //System.out.println(significant.get(getMostSignificant(userInput)).get(bestMatch).size());
+                    System.out.println(significant.get(getMostSignificant(userInput)).get(bestMatch).get(
+                            r.nextInt(significant.get(getMostSignificant(userInput)).get(bestMatch).size())));
+                }
+                }else{
+                System.out.println("I don't understand");
+            }
+        }
+        else{
+            if(first.containsKey(getFirstWord(userInput))){
+                String bestMatch = matcher.ClosestWords(userInput, first.get(getFirstWord(userInput)).keySet());
+
+                System.out.println("best match: " +bestMatch);
+                if(bestMatch.equals("")||bestMatch == null){
+                    System.out.println("I don't understand");
+                }else{
+                    Random r = new Random();
+                    System.out.println(first.get(getFirstWord(userInput)).get(bestMatch)
+                            .get(r.nextInt(first.get(getFirstWord(userInput)).get(bestMatch).size())));
+                }
+            }
+            else{
+                System.out.println("I don't understand");
+            }
         }
 
     }
@@ -121,6 +165,7 @@ public class AIMLFileParser {
                     j++;
                     wordCounts.remove(word);
                     wordCounts.put(word, j);
+                    numOfWords++;
                 }else{
                     wordCounts.put(word, 1);
                     numOfWords++;
@@ -138,7 +183,7 @@ public class AIMLFileParser {
             if(wordCounts.containsKey(words[i])){
                 //System.out.println(wordCounts.get(words[i]));
                 if(numOfWords/wordCounts.get(words[i]) > max && (!words[i].equals(" "))){
-                    max = wordCounts.get(words[i])/numOfWords;
+                    max = numOfWords/wordCounts.get(words[i]);
                     mostSignificant = words[i];
                 }
             }
@@ -152,6 +197,7 @@ public class AIMLFileParser {
         String firstword = "";
         String[] words = sentence.split(" ");
         firstword = words[0];
+        //System.out.println(firstword);
         return firstword;
     }
 
@@ -165,7 +211,7 @@ public class AIMLFileParser {
                     significant.get(word).put(sentence, patternAndTemplates.get(sentence));
                 }
                 else{
-                    HashMap<String, String> temp = new HashMap<String, String>();
+                    HashMap<String, ArrayList<String>> temp = new HashMap<String, ArrayList<String>>();
                     temp.put(sentence, patternAndTemplates.get(sentence));
                     significant.put(word, temp);
                 }
@@ -178,13 +224,14 @@ public class AIMLFileParser {
         Set<String> set = patternAndTemplates.keySet();
         for(String sentence: set){
             String firstWord = getFirstWord(sentence);
-            if(significant.containsKey(firstWord)){
-                significant.get(firstWord).put(sentence, patternAndTemplates.get(sentence));
+            //System.out.println(firstWord);
+            if(first.containsKey(firstWord)){
+                first.get(firstWord).put(sentence, patternAndTemplates.get(sentence));
             }
             else{
-                HashMap<String, String> temp = new HashMap<String, String>();
+                HashMap<String, ArrayList<String>> temp = new HashMap<String, ArrayList<String>>();
                 temp.put(sentence, patternAndTemplates.get(sentence));
-                significant.put(firstWord, temp);
+                first.put(firstWord, temp);
             }
         }
     }
@@ -192,7 +239,7 @@ public class AIMLFileParser {
 
     public static void main(String args[]){
         try{
-        AIMLFileParser parser = new AIMLFileParser();
+        AIMLFileParser parser = new AIMLFileParser(true);
         parser.parseDocument();
         parser.Match("hhhhh");
         }catch (Exception e){

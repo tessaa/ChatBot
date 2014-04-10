@@ -12,7 +12,7 @@ public class Bot {
 
     public Bot()throws Exception{
         //System.out.println("creating parser");
-        fileParser = new AIMLFileParser();
+        fileParser = new AIMLFileParser(true);
     }
 
     public void run(){

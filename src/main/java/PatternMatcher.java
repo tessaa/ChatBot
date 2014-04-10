@@ -128,13 +128,14 @@ public class PatternMatcher {
             }
         }
         //System.out.println("finished");
-        Random r = new Random();
+        Random r = new Random(closestWords.size());
         closestDistance = -1;
         //System.out.println(closestWords.get(0));
         if(closestWords.isEmpty()){
             System.out.println("return null");
             return null;
         }
+        //System.out.println(closestWords.size());
         String retur = closestWords.get(r.nextInt(closestWords.size()));
         closestWords.clear();
         return retur;

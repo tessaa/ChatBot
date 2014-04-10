@@ -50,7 +50,9 @@ public class SubtitleParser {
     private void createAIMLFileNames(){
         try{
             File file = new File("aiml.txt");
-            if(file.canWrite()){
+            if(!file.exists()){
+                file.createNewFile();
+            }
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
             //System.out.println("createAIML");
             for(String s: aimlFiles){
@@ -60,7 +62,7 @@ public class SubtitleParser {
                 writer.newLine();
                 writer.flush();
             }
-            }
+
 
         }catch (IOException e){
             System.err.println("Could not write to file: ");
@@ -92,11 +94,11 @@ public class SubtitleParser {
                 if(line.contains("[") || line.contains("]")){
                     continue;
                 }
-                if(!line.endsWith(".") && !line.endsWith("?") && !line.endsWith("!") && (line.length() <20)){
+                if(!line.endsWith(".") && !line.endsWith("?") && !line.endsWith("!") && (line.length() <100)){
                     if(unCompleteLine == null){
                         unCompleteLine = line.replace("\n", " ");
                     }else{
-                        unCompleteLine = unCompleteLine + line;
+                        unCompleteLine = unCompleteLine + " " + line;
                     }
                     continue;
                 }
