@@ -52,29 +52,8 @@ public class AIMLFileCreator {
         this.aimlFileName = aimlFileName;
     }
 
-    public void writeAIMLFile(ArrayList<String> dialogueList){
-        try{
-        BufferedWriter writer = new BufferedWriter(new FileWriter(aimlFolder + aimlFileName));
-            writer.write(aimlOpeningTag+ "\n");
-            for(int i = 0; i< dialogueList.size()-1; i++){
-                writer.write(categoryOpeningTag +"\n");
-                writer.write(patternOpeningTag);
-                writer.write(dialogueList.get(i));
-                writer.write(patternClosingTag+"\n");
-                writer.write(templateOpeningTag+"\n");
-                writer.write(dialogueList.get(i+1));
-                writer.write(templateClosingTag+"\n");
-                writer.write(categoryClosingTag+"\n");
-            }
-            writer.write(aimlClosingTag + "\n");
-        }catch (IOException e){
-            System.err.println("Could not write to file: "+ aimlFileName);
-        }
 
-    }
-
-    public void createFile(HashMap<String,String> dialogueList){
-        // System.out.println("Create aimlfile " + aimlFileName);
+    public void createAIMLFiles(HashMap<String,String> dialogueList){
         try{
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
@@ -87,34 +66,30 @@ public class AIMLFileCreator {
             Set<String> set = dialogueList.keySet();
 
             for(String s : set){
-            // staff elements
+            // category elements
             Element staff = doc.createElement("category");
             rootElement.appendChild(staff);
 
-            // firstname elements
+            // pattern elements
             Element pattern = doc.createElement("pattern");
             pattern.appendChild(doc.createTextNode(s));
             staff.appendChild(pattern);
 
-            // lastname elements
+            // template elements
             Element template = doc.createElement("template");
             template.appendChild(doc.createTextNode(dialogueList.get(s)));
             staff.appendChild(template);
             }
 
 
-            // write the content into xml file
+            // write the content into aiml file
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
             StreamResult result = new StreamResult(new File(aimlFolder+aimlFileName));
-            //System.out.println("file Created "+ aimlFileName);
-            // Output to console for testing
-            // StreamResult result = new StreamResult(System.out);
 
             transformer.transform(source, result);
 
-           //System.out.println("File saved!");
 
         } catch (ParserConfigurationException pce) {
             pce.printStackTrace();
@@ -123,8 +98,4 @@ public class AIMLFileCreator {
         }
     }
 
-    public static void main(String args[]){
-        AIMLFileCreator fileCreator = new AIMLFileCreator();
-        //fileCreator.createFile();
-    }
 }

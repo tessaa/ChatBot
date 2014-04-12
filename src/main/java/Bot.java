@@ -7,12 +7,15 @@ import java.io.*;
 public class Bot {
 
     private final AIMLFileParser fileParser;
+    private final Normalizer normalizer;
 
-    private final PatternMatcher matcher = new PatternMatcher();
+    private final PatternMatcher matcher;
 
-    public Bot()throws Exception{
+    public Bot(Boolean isSignificantBot)throws Exception{
+        normalizer = new Normalizer();
         //System.out.println("creating parser");
-        fileParser = new AIMLFileParser(true);
+        fileParser = new AIMLFileParser(isSignificantBot, normalizer);
+        matcher= new PatternMatcher(fileParser.readAIMLFiles(), isSignificantBot);
     }
 
     public void run(){
@@ -21,28 +24,19 @@ public class Bot {
         System.out.println("Hi, I'm Matilda. Nice to meet you!");
         try{
             while((userInput =reader.readLine()) != null){
-                userInput = normalize(userInput);
-                //System.out.println("match userinput: "+ userInput);
-                fileParser.Match(userInput);
+                // Normalizing user input
+                userInput = normalizer.normalizeToPattern(userInput);
+                System.out.println(matcher.GetClosestMatch(userInput));
             }
         }catch (IOException e){
 
         }
     }
 
-    private String normalize(String userInput){
-        userInput = userInput.replace('-', ' ').replace('"', ' ')
-                .replace("<i>", " ").replace("</i>", " ")
-                .replace("</font>", " ").replace("<font>", " ")
-                .replace("<", " ").replace(">", " ").replace(".", " ").replace(",", " ")
-                .replace("!", " ").replace("?", " ")
-                .trim().toUpperCase();
-        return userInput;
-    }
-
     public static void main(String args[]){
         try{
-            Bot bot = new Bot();
+            Boolean isSignificantBot = true;
+            Bot bot = new Bot(isSignificantBot);
             bot.run();
         }catch (Exception e){
 

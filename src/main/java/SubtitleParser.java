@@ -9,8 +9,8 @@ import java.util.HashMap;
 public class SubtitleParser {
 
     private final String subtitleFolder = "Subtitles/";
-    private final String movieNames = "Subtitles/Subtitles.txt";
-    private BufferedReader movieNamesReader;
+    private final File subtitleFileNames;
+    private BufferedReader subtitleFileNamesReader;
     private String line;
     private HashMap<String, Integer> wordMap;
     private String previousLine;
@@ -18,12 +18,13 @@ public class SubtitleParser {
     private final AIMLFileCreator aimlFileCreator;
     private ArrayList<ArrayList<String>> dialogue;
     private ArrayList<String> aimlFiles = new ArrayList<String>();
+    private final Normalizer normalizer;
 
-
-    public SubtitleParser(){
-        //System.out.println("Creating movieNamesReader");
+    public SubtitleParser(Normalizer normalizer){
+        subtitleFileNames = new File("Subtitles/Subtitles.txt");
+        this.normalizer = normalizer;
         try{
-            movieNamesReader = new BufferedReader(new FileReader(movieNames));
+            subtitleFileNamesReader = new BufferedReader(new FileReader(subtitleFileNames));
         }catch(FileNotFoundException e){
             System.err.println("File not found");
         }
@@ -33,31 +34,26 @@ public class SubtitleParser {
     }
 
     public void startParsing()throws IOException{
-       // System.out.println("startParsing");
-            while((line = movieNamesReader.readLine()) != null){
-            //System.out.println("Writing filename: "+ line);
+        while((line = subtitleFileNamesReader.readLine()) != null){
             line = line.trim();
-                aimlFiles.add(line);
+            aimlFiles.add(line);
             unCompleteLine = null;
             previousLine = null;
             aimlFileCreator.setAimlFileName(line.replace(".srt", ".aiml"));
-            //System.out.println("Writing filename: "+ line);
-            aimlFileCreator.createFile(parseSubtitleFile(line));
-                    }
-        createAIMLFileNames();
+            aimlFileCreator.createAIMLFiles(parseSubtitleFile(line));
+        }
+        createAIMLFileNamesFile();
     }
 
-    private void createAIMLFileNames(){
+    private void createAIMLFileNamesFile(){
         try{
             File file = new File("aiml.txt");
             if(!file.exists()){
                 file.createNewFile();
             }
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-            //System.out.println("createAIML");
             for(String s: aimlFiles){
                 s = s.replace(".srt", ".aiml");
-               // System.out.println(s);
                 writer.write(s);
                 writer.newLine();
                 writer.flush();
@@ -107,18 +103,12 @@ public class SubtitleParser {
                         line = unCompleteLine + " " +line;
                         unCompleteLine = null;
                     }
-                    line = line.replace('-', ' ').replace('"', ' ')
-                            .replace("<i>", "").replace("</i>", "")
-                            .replace("</font>", "").replace("<font>", "")
-                            .replace("<", "").replace(">", "")
-                            .trim();
+                    line = normalizer.normalizeToTemplate(line);
                     if(previousLine != null){
-                        String temp = line;
-                        list.put(previousLine.toUpperCase().replace(".", " ").replace(",", " ")
-                                .replace("!", " ").replace("?", " ").trim(),temp);
-                        previousLine = line;
+                        list.put(previousLine,line);
+                        previousLine = normalizer.normalizeToPattern(line);
                     }else{
-                        previousLine = line;
+                        previousLine = normalizer.normalizeToPattern(line);
                     }
 
                 }
@@ -129,37 +119,12 @@ public class SubtitleParser {
         return list;
     }
 
-    private void saveLine(String line){
-        String[] words = line.split(" ");
-        int i = 0;
-        for(String word : words){
-            if(wordMap.containsKey(word)){
-                i = wordMap.get(word);
-                wordMap.remove(word);
-                i++;
-                wordMap.put(word, i);
-            }else{
-                wordMap.put(word, 1);
-            }
-        }
-    }
-
-    private void writeWords(){
-        Object[] words = wordMap.keySet().toArray();
-        for(Object word: words){
-            String w = (String) word;
-            int i = wordMap.get(w);
-            System.out.println(w + "  "+ i);
-        }
-    }
-
     public static void main(String args[]){
-        SubtitleParser parser = new SubtitleParser();
+        SubtitleParser parser = new SubtitleParser(new Normalizer());
         try{
             parser.startParsing();
         }catch (IOException e){
             System.err.println("Could not read file");
         }
-        //parser.writeWords();
     }
 }

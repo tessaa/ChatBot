@@ -5,43 +5,70 @@ import java.util.*;
  */
 public class PatternMatcher {
     private LinkedList<String> closestWords = null;
-
     private int[][] matrix;
-
     private int closestDistance = -1;
-
     private String[] oldword = {};
+    private final HashMap<String, ArrayList<String>> patternsAndTemplates;
+    private HashMap<String, HashMap<String, ArrayList<String>>> first;
+    private HashMap<String, HashMap<String,ArrayList<String>>> significant;
+    private HashMap<String, Integer> wordCounts;
+    private int numOfWords = 0;
+    private Boolean isSignificant;
 
-    public PatternMatcher(){
-
+    public PatternMatcher(HashMap<String, ArrayList<String>> patternsAndTemplates, Boolean isSignificant){
+        this.isSignificant = isSignificant;
+        this.patternsAndTemplates = patternsAndTemplates;
+        first = new HashMap<String, HashMap<String, ArrayList<String>>>();
+        significant = new HashMap<String, HashMap<String, ArrayList<String>>>();
+        wordCounts = new HashMap<String, Integer>();
+        createWordSignificance();
+        if(isSignificant){
+            createIndexBySignificant();
+        }else {
+            createIndexByFirst();
+        }
     }
 
-    public String getBestMatch(String line, Set<String> PatternList){
-        String bestMatch = "";
-        int wordsInCommon = 0;
-        String[] wordList = line.split(" ");
-        for(String pattern: PatternList ){
-
-            int wordsCount = 0;
-            String[] patternList = pattern.split(" ");
-            for(int i = 0; i < wordList.length; i++){
-                for(int j = 0; j< patternList.length; j++){
-                    if(wordList[i].equals(patternList[j])){
-                        wordsCount++;
-                        break;
-                    }
+    public String GetClosestMatch(String userInput){
+        if(isSignificant){
+            if(significant.containsKey(getMostSignificant(userInput))){
+                if(getMostSignificant(userInput)==null){
+                    return "I don't understand";
                 }
-            }
-            if(wordsCount> wordsInCommon){
-                bestMatch = pattern;
-                wordsInCommon = wordsCount;
+                //System.out.println(getMostSignificant(userInput));
+                String bestMatch = ClosestWords(userInput, significant.get(getMostSignificant(userInput)).keySet());
+
+                System.out.println("best match: " +bestMatch);
+                if(bestMatch.equals("")||bestMatch == null){
+                    return "I don't understand";
+                }else{
+                    Random r = new Random();
+                    return significant.get(getMostSignificant(userInput)).get(bestMatch).get(
+                            r.nextInt(significant.get(getMostSignificant(userInput)).get(bestMatch).size()));
+                }
+            }else{
+                return "I don't understand";
             }
         }
-        return bestMatch;
+        else{
+            if(first.containsKey(getFirstWord(userInput))){
+                String bestMatch = ClosestWords(userInput, first.get(getFirstWord(userInput)).keySet());
+
+                System.out.println("best match: " +bestMatch);
+
+                if(bestMatch.equals("")||bestMatch == null){
+                    return "I don't understand";
+                }else{
+                    Random r = new Random();
+                    return first.get(getFirstWord(userInput)).get(bestMatch)
+                            .get(r.nextInt(first.get(getFirstWord(userInput)).get(bestMatch).size()));
+                }
+            }
+            return "I don't understand";
+        }
     }
 
-    int partDist(String[] w1, String[] w2, int w1len, int w2len) {
-        //System.out.println("partdistance");
+    private int partDist(String[] w1, String[] w2, int w1len, int w2len) {
         if (w1len == 0)
             return w2len;
         if (w2len == 0)
@@ -80,27 +107,20 @@ public class PatternMatcher {
         return res;
     }
 
-    int Distance(String[] w1, String[] w2) {
-        //System.out.println("Distance");
+    private int Distance(String[] w1, String[] w2) {
         String[] tmp= oldword;
         if(w2.length > oldword.length){
-          // System.out.println("w2 is longer");
             for(int i= 0; i<oldword.length;i++){
-                //System.out.println(w2[i]);
                 tmp[i] = w2[i];
-                //System.out.println(tmp[i]);
 
             }
         }
-        //System.out.println("after for");
         if((w2.length > oldword.length) && (tmp.equals(oldword))){
-            //System.out.println("if");
             oldword = w2;
 
             return partDist(w1, w2, w1.length, w2.length);
         }
         else{
-            //System.out.println("else");
             for(int[] row: matrix){
                 Arrays.fill(row, 0);
             }
@@ -109,13 +129,14 @@ public class PatternMatcher {
         }
     }
 
-    public String ClosestWords(String w, Set<String> wordList) {
+    private String ClosestWords(String w, Set<String> wordList) {
         String[] word1 = w.split(" ");
         matrix = new int[w.length()+1][30];
         for (String s : wordList) {
             //System.out.println(s);
             String[] word2 = s.split(" ");
-            if((Math.abs(word1.length-word2.length) <= closestDistance) || (closestDistance == -1)){
+            if(((Math.abs(word1.length-word2.length) <= closestDistance) || (closestDistance == -1))&& Math.abs(word1.length-word2.length)<20){
+                //System.out.println("get distance");
                 int dist = Distance(word1, word2);
                 //System.out.println("d(" + w + "," + s + ")=" + dist);
                 if (dist < closestDistance || closestDistance == -1) {
@@ -141,11 +162,89 @@ public class PatternMatcher {
         return retur;
     }
 
-    int getMinDistance() {
-        return closestDistance;
+    private void createWordSignificance(){
+        Set<String> set = patternsAndTemplates.keySet();
+        for(String s: set){
+            //System.out.println(s);
+            String[] words = s.split(" ");
+            for(int i = 0; i< words.length; i++){
+                String word = words[i];
+                if(wordCounts.containsKey(word)){
+                    int j = wordCounts.get(word);
+                    j++;
+                    wordCounts.remove(word);
+                    wordCounts.put(word, j);
+                    numOfWords++;
+                }else{
+                    wordCounts.put(word, 1);
+                    numOfWords++;
+                }
+            }
+        }
     }
 
-    private LinkedList<String> getClosestWords() {
-        return closestWords;
+    private void createIndexBySignificant(){
+
+        Set<String> set = patternsAndTemplates.keySet();
+        for(String sentence: set){
+            String[] significantWords = sentence.split(" ");
+            for(String word: significantWords){
+                if(significant.containsKey(word)){
+                    significant.get(word).put(sentence, patternsAndTemplates.get(sentence));
+                }
+                else{
+                    HashMap<String, ArrayList<String>> temp = new HashMap<String, ArrayList<String>>();
+                    temp.put(sentence, patternsAndTemplates.get(sentence));
+                    significant.put(word, temp);
+                }
+            }
+        }
     }
+
+
+    private void createIndexByFirst(){
+
+        Set<String> set = patternsAndTemplates.keySet();
+        for(String sentence: set){
+            String firstWord = getFirstWord(sentence);
+            //System.out.println(firstWord);
+            if(first.containsKey(firstWord)){
+                first.get(firstWord).put(sentence, patternsAndTemplates.get(sentence));
+            }
+            else{
+                HashMap<String, ArrayList<String>> temp = new HashMap<String, ArrayList<String>>();
+                temp.put(sentence, patternsAndTemplates.get(sentence));
+                first.put(firstWord, temp);
+            }
+        }
+    }
+
+    private String getFirstWord(String sentence){
+        String firstword = "";
+        String[] words = sentence.split(" ");
+        firstword = words[0];
+        //System.out.println(firstword);
+        return firstword;
+    }
+
+
+
+
+    private String getMostSignificant(String sentence){
+        String mostSignificant = "";
+        int max= 0;
+        String[] words = sentence.split(" ");
+        for(int i = 0; i<words.length; i++){
+            if(wordCounts.containsKey(words[i])){
+                //System.out.println(wordCounts.get(words[i]));
+                if(numOfWords/wordCounts.get(words[i]) > max && (!words[i].equals(" "))){
+                    max = numOfWords/wordCounts.get(words[i]);
+                    mostSignificant = words[i];
+                }
+            }
+        }
+
+        return mostSignificant;
+    }
+
 }
