@@ -76,7 +76,7 @@ public class AIMLFileParser {
 
     public void parseAIMLFile(){
         document.getDocumentElement().normalize();
-        //System.out.println("Root element :" + document.getDocumentElement().getNodeName());
+        
 
         NodeList nList = document.getElementsByTagName("category");
 
@@ -107,9 +107,6 @@ public class AIMLFileParser {
             for(String key: wordSet){
                 total = total + patternAndTemplates.get(key).size();
             }
-            System.out.println("Total amount of matches is: " + (total));
-            System.out.println("Amount of patterns is: " + (wordSet.size()));
-            System.out.println("Average amount of matches is: " + (total/wordSet.size()));
         }
 
 

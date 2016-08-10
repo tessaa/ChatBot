@@ -26,6 +26,7 @@ public class Bot {
             while((userInput =reader.readLine()) != null){
                 // Normalizing user input
                 userInput = normalizer.normalizeToPattern(userInput);
+		// FInd and print best response
                 System.out.println(matcher.GetClosestMatch(userInput));
             }
         }catch (IOException e){
